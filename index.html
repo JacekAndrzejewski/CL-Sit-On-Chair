@@ -3,31 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="font/stylesheet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Document</title>
 </head>
 
 <body>
+
     <header>
     <div class="container">
     <div class="row">
         <div class="col">
             <p>SIT <span class="color">ON</span> CHAIR</p>
         </div>
+        <div class="colright">
         <div class="col">
-            <ul>
-                <li>
-                <div class="list">
-                    <p>O FIRMIE</p>
-                    <ul class="nestedList">
-                    <li><a href="">Aktualności</a></li>
-                    <li><a href="">Nasz team</a></li>
-                    <li><a href="">Historia</a></li>
-                    </ul>
-                </div>
-                </li>
-                <li><a href=""><p>GALERIA</p></a></li>
-                <li><a href=""><p>KONTAKT</p></a></li>
+            <p>O FIRMIE</p>
+            <div class="triangle"></div>
+            <ul class="nestedList">
+                <li><a>Aktualności</a></li>
+                <li><a>Nasz team</a></li>
+                <li><a>Historia</a></li>
             </ul>
+        </div>
+        <div class="col">
+            <ul class="list">
+                <li><a><p>GALERIA</p></a></li>
+                <li><a><p>KONTAKT</p></a></li>
+            </ul>
+        </div>
         </div>
     </div>
     </div>
@@ -37,10 +42,13 @@
     <div class="container">
     <div class="row main">
         <div class="col">
-            <p class="arrow"><</p>
+            <p class="arrow color"><</p>
         </div>
         <div class="col">
             <img src="./images/black_chair.png" class="chairimg">
+        </div>
+        <div class="col">
+            <p class="arrow color">></p>
         </div>
         <div class="col">
             <div>
@@ -53,15 +61,13 @@
                 <p class="smallText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi repellendus voluptate, doloremque praesentium distinctio aperiam ducimus doloribus autem libero iste.</p>
             </div>
             <div>
-                <a class="button" href="">ZOBACZ WIĘCEJ</a>
+                <a class="button">ZOBACZ WIĘCEJ</a>
             </div>
-        </div>
-        <div class="col">
-            <p class="arrow">></p>
         </div>
     </div>
     </div>
     </section>
+
 
     <section>
     <div class="container">
@@ -69,27 +75,27 @@
         <div class="col">
             <div class="chair1">
             <div class="transparent">
-            <span class="colorline">
+            <div class="colorline">
                 <p>Chair CLAIR</p>
-            </span>
+            </div>
             </div>
             </div>
         </div>
         <div class="col">
         <div class="chair2">
         <div class="transparent">
-        <span class="colorline">
+        <div class="colorline">
             <p>Chair MARGARITA</p>
-        </span>
+        </div>
         </div>
         </div>
         </div>
         <div class="col">
         <div class="frame">
-            <span class="colorline">
-                <p>Finds all inputs</p>
-            </span>
-            <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checknoxex since no click events have been linked.<br/>Notice there is no change when clicking the checkboxes since no click events have been</p>
+            <div class="colorline">
+                <p>Finds all inputs<br /><br /></p>
+            </div>
+            <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.<br/><br />Notice there is no change when clicking the checkboxes since no click events have been</p>
         </div>
         </div>
     </div>
@@ -98,41 +104,83 @@
 
     <section>
     <div class="container">
-    <div class="row cennik">
-        <div class="col">
-            <div class="plan">
-
+    <div class="row prices">
+        <p class="colorline">CENNIK</p>
+        <div class="col plan">
+            <div class="row">
+                <div class="bigCircle"><div class="smallCircle"></div></div>
+                <p class="planText color">BASIC PLAN</p>
+                <div class="priceCircle">
+                    <p class="priceText">85<sup>99</sup> <span class="pln">PLN/MSC</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">Zakup towaru + dowóz</div>
+                <div class="row">Serwis</div>
+                <div class="button">DOŁĄCZ</div>
             </div>
         </div>
-        <div class="col">
-            <div class="plan">
-
+        <div class="col plan">
+            <div class="row">
+                <div class="bigCircle"><div class="smallCircle"></div></div>
+                <p class="planText color">STANDARD PLAN</p>
+                <div class="priceCircle">
+                    <p class="priceText">95<sup>99</sup> <span class="pln">PLN/MSC</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">Zakup towaru + dowóz</div>
+                <div class="row">Serwis</div>
+                <div class="row">Gwarancja 5 lat</div>
+                <div class="button standard">DOŁĄCZ</div>
             </div>
         </div>
-        <div class="col">
-            <div class="plan">
-
+        <div class="col plan">
+            <div class="row">
+                <div class="bigCircle"><div class="smallCircle"></div></div>
+                <p class="planText color">ADVANCED PLAN</p>
+                <div class="priceCircle">
+                    <p class="priceText">211<sup>00</sup> <span class="pln">PLN/MSC</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">Zakup towaru + dowóz</div>
+                <div class="row">Serwis</div>
+                <div class="row">Gwarancja 6 lat</div>
+                <div class="row">Porady projektanta</div>
+                <div class="button advanced">DOŁĄCZ</div>
             </div>
         </div>
     </div>
     </div>
     </section>
 
-    <section>
+    <section class="formSection">
     <div class="container">
     <div class="row form">
         <div class="col">
-        <div>
-            <span class="colorline">
+            <div class="colorline">
                 <p>KONTAKT</p>
-            </span>
-            <div><!--Formularz--></div>
-        </div>
+            </div>
+            <div>
+                <form class="contactForm" method="post">
+                    <input type="text" placeholder="Imię"><br /></input>
+                    <input type="text" placeholder="email"><br /></input>
+                    <textarea name="name" rows="8" cols="40" placeholder="Wiadomość"></textarea>
+                </form>
+            </div>
         </div>
         <div class="col">
             <img src="./images/red_chair.png" class="redchair">
-            <div></div>
-            <a href="" class="button"></a>
+            <div>
+                <div class="col">
+                    <img class="formOk" src="./images/form_ok.jpg" alt="">
+                </div>
+                <div class="col">
+                <p class="formText">Zgadzam się na przetwarzanie<br />danych osobowych</p>
+                </div>
+            </div>
+            <button class="button">WYŚLIJ</button>
         </div>
     </div>
     </div>
@@ -144,8 +192,13 @@
                 <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
             </div>
             <div class="col">
-                <!-- ikonki -->
                 <p>SIT <span class="footerText">ON</span> CHAIR</p>
+            </div>
+            <div class="col">
+                <img src="./images/flickr.png" alt="">
+                <img src="./images/vimeo.png" alt="">
+                <img src="./images/pinterest.png" alt="">
+                <img src="./images/twitter.png" alt="">
             </div>
         </div>
     </footer>
